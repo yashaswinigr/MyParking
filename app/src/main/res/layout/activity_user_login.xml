@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".User.Authentication.UserLoginActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="100dp">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:src="@drawable/logo"
+                android:background="@drawable/hexa"
+                android:layout_marginTop="40dp"
+                android:id="@+id/id_logo"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/id_loginText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="User Login"
+                android:textColor="#009d81"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/edit_user_login_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_loginText"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Phone No"
+                android:background="@drawable/hexagon"
+                android:paddingLeft="20dp"
+                android:textColorHint="#009d81" />
+
+            <EditText
+                android:id="@+id/edit_user_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+
+                android:layout_below="@+id/edit_user_login_mobile_no"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/hexagon"
+                android:layout_marginRight="30dp"
+                android:hint="Password"
+
+                android:textColorHint="#009d81" />
+            <Button
+                android:id="@+id/login_user_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/edit_user_login_password"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/fill_hexagon"
+                android:textColor="#FFFF"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textSize="17dp"
+                android:onClick="loginuser"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       android:layout_margin="5dp"
+        android:background="#009d81"
+        android:textColor="#FFFF"
+        android:textSize="20dp"
+        android:text="Sign Up"
+        android:onClick="register"
+        android:id="@+id/id_user_sign_up"
+        />
+</RelativeLayout>

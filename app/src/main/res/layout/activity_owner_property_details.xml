@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Property Details"
+                android:textSize="30dp"
+                android:textColor="#009d81"/>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Area Size                       :  "
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/areaSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#000" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address                         :  "
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/addressInPropertyDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#000" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Security                          :"
+                        android:textSize="18dp" />
+
+                    <RadioGroup
+                        android:layout_width="238dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radioButtonYes"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radioButtoNo"
+                            android:text="No" />
+                    </RadioGroup>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#000" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter no of 2 wheeler  :  "
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/noOfTwoWheeler"/>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#000" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter no of 4 wheeler  :  "
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/noOfFourWheeler"/>
+                </TableRow>
+
+
+
+            </TableLayout>
+    </ScrollView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Submit"
+                android:id="@+id/submitInPropertyDetails"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:onClick="propertyDataToDatabase"
+                android:background="#009d81"/>
+
+        </LinearLayout>

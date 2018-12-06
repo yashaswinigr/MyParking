@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.myparkingapp.User.UserDetailBookingActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Booking Details"
+    android:textSize="30dp"
+    android:layout_marginTop="25dp"
+    android:textColor="#009d81"
+    android:layout_gravity="center_horizontal"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+    <TableRow
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=":"
+            />
+
+        <EditText
+            android:id="@+id/dateOFBooking"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/date"
+            android:layout_height="50dp"
+            android:id="@+id/datePicker"/>
+    </TableRow>
+        <TableRow
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=":"
+                />
+
+
+            <EditText
+                android:id="@+id/startTime"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="50dp"
+                android:background="@drawable/clock"
+                android:id="@+id/startTimrPicker"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:text="End Time"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=":"
+                />
+
+
+            <EditText
+                android:id="@+id/endTime"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="50dp"
+                android:background="@drawable/clock"
+                android:id="@+id/endTimePicker"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8.1"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=":"
+                />
+
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Car"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Bike"/>
+        </RadioGroup>
+        </TableRow>
+
+
+    </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:onClick="bookingDetails"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit"
+        android:textColor="#FFFF"
+        android:layout_margin="5dp"
+        android:background="#009d81"
+        />
+
+</LinearLayout>

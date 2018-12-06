@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.user.myparkingapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDUaV-kL7WyAnWWOklbK_mxWK_HcAJuvTs" />
+
+        <activity android:name=".MainPageActivity"
+           >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Owner.Authentication.OwnerLoginActivity" />
+        <activity android:name=".Owner.Authentication.OwnerRegistrationActivity" />
+        <activity android:name=".Owner.OwnerCheckForLocationActivity" />
+        <activity android:name=".Owner.OwnerPropertyLocationUsingMapActivity" />
+        <activity android:name=".Owner.OwnerAddressConfirmationaActivity" />
+        <activity android:name=".Owner.OwnerPropertyDetailsActivity" />
+        <activity android:name=".User.Authentication.UserLoginActivity" />
+        <activity android:name=".User.Authentication.UserRegistrationActivity" />
+        <activity android:name=".User.UserCheckForLocationActivity" />
+        <activity android:name=".User.UserPropertyLocationUsingMapActivity" />
+        <activity android:name=".User.UserAddressConfirmationActivity" />
+        <activity android:name=".User.ParkingListForUserActivity" />
+        <activity android:name=".User.UserBookingActivity" />
+        <activity android:name=".User.UserAddressChangesActivity" />
+        <activity android:name=".Owner.OwnerAddressChangesActivity" />
+        <activity android:name=".User.UserDetailBookingActivity"></activity>
+    </application>
+
+</manifest>
